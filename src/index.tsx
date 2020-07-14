@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-
-const plus = (a: string, b: string): string => a + b;
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
 
 ReactDOM.render(
-	<React.StrictMode>
+	<ThemeProvider theme={theme}>
 		<App />
-	</React.StrictMode>,
+	</ThemeProvider>,
 	document.getElementById('root')
 );
