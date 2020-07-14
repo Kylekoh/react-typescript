@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const Number: React.FunctionComponent<IProps> = ({ count }) => (
-	<Container>{count}</Container>
+	<Container isBlue={count > 10}>{count}</Container>
 );
 
 export default Number;
